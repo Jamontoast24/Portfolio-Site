@@ -1,0 +1,164 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Portfolio</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+  <link href=
+  "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+  rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/1b88a131a4.js" crossorigin="anonymous"></script>
+
+
+</head>
+<!-- Navbar Section -->
+<header id="home">
+  <nav class="main-nav" id="navbar">
+    <ul class="nav-ul">
+      <li >James Horner</li>
+    </ul>
+
+    <ul class="nav-ul-right">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About Me</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="content">
+<!-- Intro Section -->
+<section class="intro-section" id="intro">
+  <h1>Hi. I'm <span style="color: rgb(85, 205, 221);">James</span>.</h1>
+  <h2>A web Developer.</h2>
+  <a href="#projects"><i class="fas fa-angle-double-down" id="arrow-down"></i></a>
+</section>
+
+<!-- Projects -->
+<div class="project-header" id="projects">Projects:</div>
+<section class="projects">
+  <div>
+    <img src="jamweather.png">
+    <h3>Weather App</h3>
+    <p>This is a weather application that uses geolocalisation
+      to give the user the current weather. It also features a search
+      bar to find out the weather in other locations.<br>
+      Built with: HTML/CSS/JS
+    </p>
+    <a href="https://jamweather.netlify.app/">Link</a>
+  </div>
+
+  <div>
+    <img src="microclone.png">
+    <h3>Microclone</h3>
+    <p>While I was delving deeper into CSS I wanted to re-create a nice
+      looking website. The microsoft website seemed like a perfect site
+      to copy. Hence the name "Microclone".<br>
+      Built with: HTML/CSS
+    </p>
+    <a href="https://jamontoast24.github.io/microclone/">Link</a>
+  </div>
+
+  <div>
+    <img src="budgetapp.png">
+    <h3>Budget App</h3>
+    <p>This app was designed to help calculate a budget. You could enter
+      an income and then add some expenses to see how much of your income
+      would remain The selector toggles between adding and subtracting to
+      the total budget.<br>
+      Built with: HTML/CSS/JS
+    </p>
+    <a href="https://jamontoast24.github.io/Budget-App/">Link</a>
+  </div>
+   <div>
+    <img src="rps.png">
+    <h3>Rock,Paper,Scissors!</h3>
+    <p>A classic childhood game re-created with javascript! You play
+      a best of 5 against the computer and if you want to play against
+      simply reset the score!<br>
+      Built with: HTML/CSS/JS
+    </p>
+    <a href="https://jamontoast24.github.io/rockPaperScissors/">Link</a>
+  </div> 
+
+  <div>
+    <img src="chuckjokes.png">
+    <h3>Chuck Jokes</h3>
+    <p>Created using the Chuck Norris Jokes API, this app is a fun one
+      when you just need a few laughs throughout the day. You click 
+      the button and a new random joke appears onscreen !<br>
+      Built with: HTML/CSS/JS/Fetch API
+    </p>
+    <a href="https://jamontoast24.github.io/ChuckJokes/">Link</a>
+  </div>
+
+
+
+  <div>
+    <img src="swytch.png">
+    <h3>Swytch Design</h3>
+    <p>I created this design as a potential design for the startup company
+      Swytch.<br>
+      Built with: HTML/CSS
+    </p>
+    <a href="https://jamontoast24.github.io/swytchTwo/">Link</a>
+  </div>
+
+
+</section>
+
+<!-- About Me -->
+<section class="about-me" id="about">
+  <div class="about-header" id="">About Me:</div>
+  <p class="about" id="">Hey ! I'm James Horner, nice to meet you! I'm a self taught
+    front-end developer with a passion for technology. Ever since my
+    childhood I've been obssessed with technology and over the years
+    I have become more intrigued with computer building and coding.
+    Going from a simple "Hello World" to a full-on web page has been
+    such a fun & creative learning experience and I feel that I'm at 
+    the point where I would like to delve into the profesionnal realm
+    of coding. 
+  </p>
+</section>
+
+<!-- Footer Section -->
+
+<section class="footer">
+  <a href="https://www.linkedin.com/in/james-horner-1b21b9159/"><i class="fab fa-linkedin fa-3x" class="icon-1" id="linked"></i></a>
+  <a href="https://github.com/Jamontoast24"><i class="fab fa-github fa-3x" class="icon-2" id="github""></i></a>
+</section>
+</div>
+<body>
+  
+
+    <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+  
+</body>
+</html>
